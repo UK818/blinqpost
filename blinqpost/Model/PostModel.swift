@@ -7,15 +7,13 @@
 
 import Foundation
 
-struct Post: Codable {
-	let welcomeDescription: String?
-	let link: String?
-	let id, video, timestamp: Int?
-	let thumbnail: String?
-	let username: String?
-
-	enum CodingKeys: String, CodingKey {
-		case welcomeDescription = "description"
-		case link, id, video, timestamp, thumbnail, username
-	}
+struct Post: Identifiable, Codable {
+	var id: Int?
+	var description: String?
+	var media: String?
+	var isVideo, timestamp: Int?
+	var displayPicture: String?
+	var username: String?
 }
+
+typealias PostModel = [Post]
