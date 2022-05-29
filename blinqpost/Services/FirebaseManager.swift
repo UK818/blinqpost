@@ -10,12 +10,12 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 protocol FirebaseService {
-	func getPosts(completionHandler: @escaping (Result<[User], Error>) -> Void)
+	func getPosts(completion: @escaping ([Post]) -> Void)
 }
 
 class FirebaseManager: FirebaseService {
 	
-	static let shared = FirebaseManager
+	static let shared = FirebaseManager()
 	
 	private let database = Firestore.firestore()
 	var posts: PostModel = [Post]()
@@ -33,7 +33,7 @@ class FirebaseManager: FirebaseService {
 					let id = post["id"] as? Int
 					let description = post["description"] as? String
 					let media = post["link"] as? String
-					let displayPicture = post["thumnail"] as? String
+					let displayPicture = post["thumbnail"] as? String
 					let username = post["username"] as? String
 					let timestamp = post["timestamp"] as? Int
 					let isVideo = post["video"] as? Int

@@ -32,12 +32,17 @@
 		04565175283FE755000F77D3 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04565174283FE754000F77D3 /* PostModel.swift */; };
 		04565176283FE755000F77D3 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04565174283FE754000F77D3 /* PostModel.swift */; };
 		04565177283FE755000F77D3 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04565174283FE754000F77D3 /* PostModel.swift */; };
-		048A321E2840F6B40080915F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A321D2840F6B40080915F /* NetworkService.swift */; };
-		048A32212840FA730080915F /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A32202840FA730080915F /* URLSession+Extension.swift */; };
 		048A32242840FF880080915F /* ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A32232840FF880080915F /* ViewLayout.swift */; };
 		048A322728411D8A0080915F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A322628411D8A0080915F /* CollectionViewCell.swift */; };
 		048A322A284123360080915F /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A3229284123360080915F /* Storage.swift */; };
 		048A322C28422D260080915F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A322B28422D250080915F /* ViewModel.swift */; };
+		048A322F284292EB0080915F /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 048A322E284292EB0080915F /* Realm */; };
+		048A3231284292EB0080915F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 048A3230284292EB0080915F /* RealmSwift */; };
+		048A3234284294900080915F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 048A3233284294900080915F /* Kingfisher */; };
+		048A3238284386F20080915F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A3237284386F20080915F /* Constants.swift */; };
+		048A323C2843A2760080915F /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A323B2843A2760080915F /* VideoViewModel.swift */; };
+		048A323E284428C20080915F /* MockFirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A323D284428C10080915F /* MockFirebaseService.swift */; };
+		048A324128442D600080915F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 048A324028442D600080915F /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,12 +79,13 @@
 		0456515E283FBB8F000F77D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04565170283FBF8D000F77D3 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		04565174283FE754000F77D3 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
-		048A321D2840F6B40080915F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		048A32202840FA730080915F /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
 		048A32232840FF880080915F /* ViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayout.swift; sourceTree = "<group>"; };
 		048A322628411D8A0080915F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		048A3229284123360080915F /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		048A322B28422D250080915F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		048A3237284386F20080915F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		048A323B2843A2760080915F /* VideoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		048A323D284428C10080915F /* MockFirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFirebaseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +96,13 @@
 				04565155283FBA38000F77D3 /* FirebaseAnalyticsSwift in Frameworks */,
 				04565151283FBA38000F77D3 /* FirebaseAnalytics in Frameworks */,
 				04565153283FBA38000F77D3 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				048A3231284292EB0080915F /* RealmSwift in Frameworks */,
+				048A3234284294900080915F /* Kingfisher in Frameworks */,
 				04565159283FBA38000F77D3 /* FirebaseFirestore in Frameworks */,
 				0456515D283FBA38000F77D3 /* FirebaseStorage in Frameworks */,
 				04565157283FBA38000F77D3 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				048A322F284292EB0080915F /* Realm in Frameworks */,
+				048A324128442D600080915F /* FirebaseFirestore in Frameworks */,
 				0456515B283FBA38000F77D3 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				04565136283FB94A000F77D3 /* blinqpostTests.swift */,
+				048A323D284428C10080915F /* MockFirebaseService.swift */,
 			);
 			path = blinqpostTests;
 			sourceTree = "<group>";
@@ -172,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				04565174283FE754000F77D3 /* PostModel.swift */,
+				048A3237284386F20080915F /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +211,7 @@
 		0456516D283FBF55000F77D3 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				048A323B2843A2760080915F /* VideoViewModel.swift */,
 				048A322B28422D250080915F /* ViewModel.swift */,
 			);
 			path = "View Model";
@@ -217,7 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				04565170283FBF8D000F77D3 /* FirebaseManager.swift */,
-				048A321D2840F6B40080915F /* NetworkService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -225,7 +237,6 @@
 		048A321F2840FA550080915F /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				048A32202840FA730080915F /* URLSession+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -278,6 +289,10 @@
 				04565158283FBA38000F77D3 /* FirebaseFirestore */,
 				0456515A283FBA38000F77D3 /* FirebaseFirestoreSwift */,
 				0456515C283FBA38000F77D3 /* FirebaseStorage */,
+				048A322E284292EB0080915F /* Realm */,
+				048A3230284292EB0080915F /* RealmSwift */,
+				048A3233284294900080915F /* Kingfisher */,
+				048A324028442D600080915F /* FirebaseFirestore */,
 			);
 			productName = blinqpost;
 			productReference = 0456511C283FB948000F77D3 /* blinqpost.app */;
@@ -353,6 +368,9 @@
 			mainGroup = 04565113283FB948000F77D3;
 			packageReferences = (
 				0456514F283FBA38000F77D3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				048A322D284292EB0080915F /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				048A32322842948F0080915F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				048A323F28442D600080915F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 0456511D283FB948000F77D3 /* Products */;
 			projectDirPath = "";
@@ -404,13 +422,13 @@
 				04565175283FE755000F77D3 /* PostModel.swift in Sources */,
 				048A322728411D8A0080915F /* CollectionViewCell.swift in Sources */,
 				048A322C28422D260080915F /* ViewModel.swift in Sources */,
-				048A32212840FA730080915F /* URLSession+Extension.swift in Sources */,
 				04565120283FB948000F77D3 /* AppDelegate.swift in Sources */,
 				048A32242840FF880080915F /* ViewLayout.swift in Sources */,
+				048A323C2843A2760080915F /* VideoViewModel.swift in Sources */,
 				04565171283FBF8D000F77D3 /* FirebaseManager.swift in Sources */,
-				048A321E2840F6B40080915F /* NetworkService.swift in Sources */,
 				04565122283FB948000F77D3 /* SceneDelegate.swift in Sources */,
 				048A322A284123360080915F /* Storage.swift in Sources */,
+				048A3238284386F20080915F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048A323E284428C20080915F /* MockFirebaseService.swift in Sources */,
 				04565172283FBF8D000F77D3 /* FirebaseManager.swift in Sources */,
 				04565176283FE755000F77D3 /* PostModel.swift in Sources */,
 				04565137283FB94A000F77D3 /* blinqpostTests.swift in Sources */,
@@ -762,6 +781,30 @@
 				kind = branch;
 			};
 		};
+		048A322D284292EB0080915F /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		048A32322842948F0080915F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		048A323F28442D600080915F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -799,6 +842,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0456514F283FBA38000F77D3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		048A322E284292EB0080915F /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 048A322D284292EB0080915F /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		048A3230284292EB0080915F /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 048A322D284292EB0080915F /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		048A3233284294900080915F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 048A32322842948F0080915F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		048A324028442D600080915F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0456514F283FBA38000F77D3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

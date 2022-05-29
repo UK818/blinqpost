@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Kingfisher
+import UIKit
 
 protocol ViewModelOutput: AnyObject {
 	func updateViews(with data: [Post])
@@ -13,8 +15,8 @@ protocol ViewModelOutput: AnyObject {
 
 class ViewModel {
 	
-	weak var output: ViewModelOutput?
 	private let firebaseService: FirebaseService
+	weak var output: ViewModelOutput?
 	
 	init(firebaseService: FirebaseService) {
 		self.firebaseService = firebaseService
@@ -28,29 +30,39 @@ class ViewModel {
 		}
 	}
 	
-//	public func loadImage(with url: String, imageView: UIImageView?) {
-//		let imageLink = URL(string: url)
-//		let processor = DownsamplingImageProcessor(size: imageView?.bounds.size ?? CGSize(width: 200, height: 188))
-//					 |> RoundCornerImageProcessor(cornerRadius: 50)
-//		imageView?.kf.indicatorType = .activity
-//		imageView?.kf.setImage(
-//			with: imageLink,
-//			placeholder: UIImage(named: "plaeholder"),
-//			options: [
-//				.processor(processor),
-//				.scaleFactor(UIScreen.main.scale),
-//				.transition(.fade(1)),
-//				.cacheOriginalImage
-//			])
-//		{
-//			result in
-//			switch result {
-//			case .success(let value):
-//				print("Task done for: \(value.source.url?.absoluteString ?? "")")
-//			case .failure(let error):
-//				print("Job failed: \(error.localizedDescription)")
-//			}
-//		}
-//	}
+	public func loadImage(with url: String, in imageView: UIImageView?, placeHolder: String) {
+		let imageLink = URL(string: url)
+		let processor = DownsamplingImageProcessor(size: imageView?.bounds.size ?? CGSize(width: 200, height: 188))
+					 |> RoundCornerImageProcessor(cornerRadius: 50)
+		imageView?.kf.indicatorType = .activity
+		imageView?.kf.setImage(
+			with: imageLink,
+			placeholder: UIImage(named: placeHolder),
+			options: [
+				.processor(processor),
+				.scaleFactor(UIScreen.main.scale),
+				.transition(.fade(1)),
+				.cacheOriginalImage
+			])
+		{
+			result in
+			switch result {
+			case .success(let value):
+				print("Task done for: \(value.source.url?.absoluteString ?? "")")
+			case .failure(let error):
+				print("Job failed: \(error.localizedDescription)")
+			}
+		}
+	}
+	
+	func convertTimeStampToString(timeStamp: Double, label: UILabel) {
+		let date = Date(timeIntervalSince1970: timeStamp)
+		let dateFormatter = DateFormatter()
+		dateFormatter.timeStyle = DateFormatter.Style.medium //Set time style
+		dateFormatter.dateStyle = DateFormatter.Style.medium //Set date style
+		dateFormatter.timeZone = .current
+		let localDate = dateFormatter.string(from: date)
+		label.text = localDate
+	}
 	
 }
