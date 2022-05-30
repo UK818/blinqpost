@@ -63,7 +63,6 @@ class CollectionViewCell: UICollectionViewCell {
 		mediaContentView.addSubview(mediaContentImageView)
 		mediaContentView.addSubview(volumeButton)
 		
-		mediaContentImageView.frame = mediaContentView.bounds
 		mediaContentImageView.center = mediaContentView.center
 		
 		volumeButton.addTarget(self, action: #selector(didTapVolumeButton), for: .touchUpInside)
@@ -84,7 +83,7 @@ class CollectionViewCell: UICollectionViewCell {
 			mediaContentView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
 			mediaContentView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 10),
 			mediaContentView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.9),
-			mediaContentView.heightAnchor.constraint(equalToConstant: 275),
+			mediaContentView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.55),
 			
 			volumeButton.bottomAnchor.constraint(equalTo: mediaContentView.bottomAnchor, constant: 30),
 			volumeButton.trailingAnchor.constraint(equalTo: mediaContentView.trailingAnchor, constant: -10),
@@ -92,7 +91,7 @@ class CollectionViewCell: UICollectionViewCell {
 			volumeButton.heightAnchor.constraint(equalToConstant: 30),
 			
 			mediaContentImageView.widthAnchor.constraint(equalTo: mediaContentView.widthAnchor),
-			mediaContentImageView.heightAnchor.constraint(equalToConstant: 275),
+			mediaContentImageView.heightAnchor.constraint(equalTo: mediaContentView.heightAnchor),
 			
 			descriptionLabel.topAnchor.constraint(equalTo: mediaContentView.bottomAnchor, constant: 10),
 			descriptionLabel.leadingAnchor.constraint(equalTo: mediaContentView.leadingAnchor),

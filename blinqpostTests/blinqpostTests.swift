@@ -6,32 +6,31 @@
 //
 
 import XCTest
-import Firebase
 @testable import blinqpost
 
-class MockFirebaseService: FirebaseService {
-	var getMockData: [Post]?
-	func getPosts(completion: @escaping ([Post]) -> Void) {
-		if let result = getMockData {
-			completion(result)
-		}
-	}
-}
+//class MockFirebaseService: FirebaseService {
+//	var getMockData: [Post]?
+//	func getPosts(completion: @escaping ([Post]) -> Void) {
+//		if let result = getMockData {
+//			completion(result)
+//		}
+//	}
+//}
 
 class blinqpostTests: XCTestCase {
 	
-	private var viewModel: ViewModel!
-	private var firebaseService: MockFirebaseService!
+	private var videoViewModel: VideoViewModel!
+//	private var firebaseService: MockFirebaseService!
 
     override func setUpWithError() throws {
-		firebaseService = MockFirebaseService()
-		viewModel = ViewModel(firebaseService: firebaseService as! FirebaseService)
+//		firebaseService = MockFirebaseService()
+		videoViewModel = VideoViewModel()
 		try super.setUpWithError()
     }
 
     override func tearDownWithError() throws {
-		viewModel = nil
-		firebaseService = nil
+		videoViewModel = nil
+//		firebaseService = nil
 		try super.tearDownWithError()
     }
 
