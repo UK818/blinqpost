@@ -17,9 +17,12 @@ Dependencies Used:
 - KingFisher
 - RealmSwift
 
+<h4>LIGHT MODE</h4>
 
 <img src = "https://user-images.githubusercontent.com/32143087/170894428-2f8d83cf-7ee1-4c30-a74f-71caf8be2828.png" width = "350" height = "700"/>   <img src = "https://user-images.githubusercontent.com/32143087/170894388-77cf90fb-c7cf-4120-b4be-99e4782880e7.png" width = "350" height = "700"/>
 
-<img src = "https://user-images.githubusercontent.com/32143087/170894430-fce1d8b1-dbcd-47ee-a77a-bc947595c8a6.png" width = "350" height = "700"/> <img src = "https://user-images.githubusercontent.com/32143087/171060564-3f736c28-77e2-4331-9c52-80160e9e87ba.png" width = "350" height = "700"/> 
+<img src = "https://user-images.githubusercontent.com/32143087/170894430-fce1d8b1-dbcd-47ee-a77a-bc947595c8a6.png" width = "350" height = "700"/> 
 
-<img src = "https://user-images.githubusercontent.com/32143087/171060578-be3f8cad-de53-4363-9d07-66c1d93f8a6b.png" width = "350" height = "700"/> 
+<h4>DARK MODE</h4>
+
+<img src = "https://user-images.githubusercontent.com/32143087/171060564-3f736c28-77e2-4331-9c52-80160e9e87ba.png" width = "350" height = "700"/>    <img src = "https://user-images.githubusercontent.com/32143087/171060578-be3f8cad-de53-4363-9d07-66c1d93f8a6b.png" width = "350" height = "700"/> 
